@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:15432/postgres
+    username: clinic_user
+    password: pAssw0rd
+
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_schema: clinic_data
+        temp:
+          use_jdbc_metadata_defaults: false
